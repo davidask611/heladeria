@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Somos una heladeria familiar, tenemos sabores variados y hacemos envios a domicilio" />
+    <meta name="keywords" content="heladeria,helados,pizza,postres,combos" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Heladeria-La tentacion</title>
+</head>
+
+<body>
+    <!--menu de navegacion-->
+
+    <header>
+        <div class="logo">
+            <img src="imagenes/helado logo.jpg" alt="logo de la empresa" width="70vh" />
+            <strong id="nombre-empresa">La tentacion</strong>
+        </div>
+
+        <nav>
+            <a href="#" target="_blank" rel="noopener noreferrer">Mi pedido</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Ofertas</a>
+            <a href="registro.html" target="_blank" rel="noopener noreferrer">Mi cuenta</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Ubicacion</a>
+
+        </nav>
+    </header>
+
+
+
+    <!--galeria automatica-->
+
+    <div class="slider">
+        <ul>
+            <div>
+                <img src="imagenes/3 kilo.png">
+            </div>
+            <div>
+                <img src="imagenes/bombon suizo.png">
+            </div>
+            <div>
+                <img src="imagenes/helado 1kg.jpg">
+            </div>
+            <div>
+                <img src="imagenes/promo pizza +1kg helado.jpg">
+            </div>
+            <div>
+                <img src="imagenes/tentacion (1).png">
+            </div>
+            <div>
+                <img src="imagenes/torta helada (3).png">
+            </div>
+        </ul>
+    </div>
+
+    <h1>Heladeria La tentacion</h1>
+    <!--bienvenida-->
+    <h2>elija su favorito y se lo enviamos</h2>
+    <!--subtitulo-->
+
+    <!--menu de pedido-->
+    <div class="menu">
+        <div class="contenedor1kilo">
+            <form action="" method="get">
+                <i class="kilo">Helado 1 kilo<br>1500 $</i>
+                <div class="unkilo">
+                    <img src="imagenes/helado 1kg.jpg" alt="helado 1kg" width="150px">
+                </div>
+                <div class="sabores">
+                    <i class="maximo">maximo 3 sabores</i>
+                    <label><i>chocolate</i><input type="radio" name="chocolate" /></label>
+                    <label><i>dulce de leche</i><input type="radio" name="dulce de leche" /></label>
+                    <label><i>vainilla</i><input type="radio" name="vainilla" /></label>
+                    <label><i>frutilla al agua</i><input type="radio" name="frutilla al agua" /></label>
+                    <label><i>anana</i><input type="radio" name="anana" /></label>
+                    <label><i>frutos del bosque</i><input type="radio" name="frutos del bosque" /></label>
+                    <label><i>menta granizada</i><input type="radio" name="menta granizada" /></label>
+                    <label><i>crema del cielo</i><input type="radio" name="crema del cielo" /></label>
+                    <input class="cantidad1kilo" type="number" name="cantidad" placeholder="indique la cantidad" />
+                    <input class="borrar1kilo" type="reset" value="borrar seleccion" />
+                    <input class="enviar1kilo" type="submit" value="añadir al pedido" />
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor3litros">
+            <form action="" method="get">
+                <i class="litros">Helado 3<br>1600 $</i>
+                <div>
+                    <img src="imagenes/3 kilo.png" alt="helado 3lts" width="150px">
+                </div>
+                <div class="sabores">
+                    <label><i>chocolate-frutilla-dulce de leche</i><input type="radio"
+                            name="chocolate-frutilla-dulce de leche" /></label>
+                    <label><i>chocolate-vainilla-cereza</i><input type="radio" name="chocolate-vainilla-cereza" /></label>
+                    <label><i>fruto del bosque-menta granizada-anana</i><input type="radio"
+                            name="fruto del bosque-menta granizada-anana" /></label>
+                    <label><i>dulce de leche-anana-vainilla</i><input type="radio"
+                            name="dulce de leche-anana-vainilla" /></label>
+                    <label><i>dulce de leche-chocolate-crema americana</i><input type="radio"
+                            name="dulce de leche-chocolate-crema americana" /></label>
+                    <input class="cantidad3litros" type="number" name="cantidad" placeholder="indique la cantidad" />
+                    <input class="borrar3litros" type="reset" value="borrar seleccion" />
+                    <input class="enviar3litros" type="submit" value="añadir al pedido" />
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedorbombonsuizo">
+            <form action="" method="get">
+                <i class="bombonsuizo">El bombon suizo<br>1200 $</i>
+                <div>
+                    <img src="imagenes/bombon suizo.png" alt="bombon suizo" width="150px">
+                </div>
+                <div class="inputsuizo">
+                    <input class="cantidadsuizo" type="number" name="cantidad" placeholder="indique la cantidad" />
+                    <input class="borrarsuizo" type="reset" value="borrar seleccion" />
+                    <input class="enviarsuizo" type="submit" value="añadir al pedido" />
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedortortahelada">
+            <form action="" method="get">
+                <i class="tortahelada">Torta helada<br>2000 $</i>
+                <div>
+                    <img src="imagenes/torta helada.png" alt="torta helada" width="150px">
+                </div>
+                <div class="inputtortahelada">
+                    <input class="cantidadtortahelada" type="number" name="cantidad" placeholder="indique la cantidad" />
+                    <label><i>oreo</i><input type="radio" name="chocolate" /></label>
+                    <input class="borrartortahelada" type="reset" value="borrar seleccion" />
+                    <input class="enviartortahelada" type="submit" value="añadir al pedido" />
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedortortahelada2">
+            <form action="" method="get">
+                <i class="tortahelada2">Torta helada<br>2000 $</i>
+                <div>
+                    <img src="imagenes/torta helada (2).jpeg" alt="torta helada2" width="150px">
+                </div>
+                <div class="inputtortahelada2">
+                    <input class="cantidadtortahelada2" type="number" name="cantidad" placeholder="indique la cantidad" />
+                    <label><i>chocolate granizado</i><input type="radio" name="chocolate" /></label>
+                    <input class="borrartortahelada2" type="reset" value="borrar seleccion" />
+                    <input class="enviartortahelada2" type="submit" value="añadir al pedido" />
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedortortahelada3">
+            <form action="" method="get">
+                <i class="tortahelada3">Torta helada<br>2000 $</i>
+                <div>
+                    <img src="imagenes/torta helada (3).png" alt="torta helada3" width="150px">
+                </div>
+                <div class="inputtortahelada3">
+                    <input class="cantidadtortahelada3" type="number" name="cantidad" placeholder="indique la cantidad" />
+                    <label><i>frutos del bosque</i><input type="radio" name="chocolate" /></label>
+                    <input class="borrartortahelada3" type="reset" value="borrar seleccion" />
+                    <input class="enviartortahelada3" type="submit" value="añadir al pedido" />
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedortentacion">
+            <form action="" method="get">
+                <i class="tentacion">Tu tentacion<br>800 $</i>
+                <div>
+                    <img src="imagenes/tentacion (4).png" alt="tentacion" width="150px">
+                </div>
+                <div class="sabores">
+                    <label><i>limon</i><input type="radio" name="limon" /></label>
+                    <label><i>chocolate</i><input type="radio" name="chocolate" /></label>
+                    <label><i>frutos del bosque</i><input type="radio" name="frutos del bosque" /></label>
+                    <label><i>dulce de leche con nuez</i><input type="radio" name="dulce de leche con nuez" /></label>
+                    <label><i>frutilla</i><input type="radio" name="frutilla" /></label>
+                    <label><i>menta granizada</i><input type="radio" name="menta granizada" /></label>
+                    <input class="cantidadtentacion" type="number" name="cantidadtentacion"
+                        placeholder="indique la cantidad" />
+                    <input class="borrartentacion" type="reset" value="borrar seleccion" />
+                    <input class="enviartentacion" type="submit" value="añadir al pedido" />
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedorpizza1kg">
+            <form action="" method="get">
+                <i class="altocombo">Alto combo</i>
+                <i class="pizza1kg">pizza + 1kg de helado<br>2500 $</i>
+                <div>
+                    <img src="imagenes/promo pizza +1kg helado.jpg" alt="promo pizza +1kg helado" width="200px">
+                </div>
+                <div class="sabores">
+                    <i>maximo 3 sabores</i>
+                    <label><i>chocolate</i><input type="radio" name="chocolate"  /></label>
+                    <label><i>dulce de leche</i><input type="radio" name="dulce de leche" /></label>
+                    <label><i>vainilla</i><input type="radio" name="vainilla" /></label>
+                    <label><i>frutilla al agua</i><input type="radio" name="frutilla al agua" /></label>
+                    <label><i>anana</i><input type="radio" name="anana" /></label>
+                    <label><i>frutos del bosque</i><input type="radio" name="frutos del bosque" /></label>
+                    <label><i>menta granizada</i><input type="radio" name="menta granizada" /></label>
+                    <label><i>crema del cielo</i><input type="radio" name="crema del cielo" /></label>
+                    <input class="cantidadpizza1kg" type="number" name="cantidadpizza1kg"
+                        placeholder="indique la cantidad" />
+                    <input class="borrarpizza1kg" type="reset" value="borrar seleccion" />
+                    <input class="enviarpizza1kg" type="submit" value="añadir al pedido" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!--la galeria de ofertas ira con grid-template-area-->
+
+    <div class="ofertas">
+        <i>ofertas</i>
+        <div class="caja1"><img class="imagen1" src="imagenes/crocante.png" alt="" width="150px" /></div>
+        <div class="caja2"><img class="imagen2" src="imagenes/frutilla.png" alt="" width="150px" /></div>
+        <div class="caja3"><img class="imagen3" src="imagenes/palito fusion.png" alt="" width="150px" /></div>
+        <div class="caja4"><img class="imagen4" src="imagenes/tsunami frutilla.png" alt="" width="150px" /></div>
+        <div class="caja5"><img class="imagen5" src="imagenes/tsunami.png" alt="" width="150px" /></div>
+        <div class="caja6"><img class="imagen6" src="imagenes/promo pizza +1kg helado.jpg" alt="" width="150px" /></div>
+    </div>
+
+    <div class="form-ofertas">
+        <form action="" method="get">
+            <label><input type="radio" name="crocante">crocante</label>
+            <input class="derecha" type="number" name="cantidad">
+            <br>
+            <label><input type="radio" name="frutilla">frutilla</label>
+            <input class="derecha" type="number" name="cantidad">
+            <br>
+            <label><input type="radio" name="palito-fusion">palito fusion</label>
+            <input class="derecha" type="number" name="cantidad">
+            <br>
+            <label><input type="radio" name="tsunami-frutilla">tsunami frutilla</label>
+            <input class="derecha" type="number" name="cantidad">
+            <br>
+            <label><input type="radio" name="tsunami-chocolate">tsunami chocolate</label>
+            <input class="derecha" type="number" name="cantidad">
+            <br>
+            <label><input type="radio" name="1pizza+1kghelado">1 pizza + 1kg helado</label>
+            <input class="derecha" type="number" name="cantidad">
+            <br>
+            <input type="reset" value="borrar seleccion">
+            <br>
+            <input type="submit" name="enviar" value="añadir al pedido">
+        </form>
+    </div>
+
+    <div>
+        <form action="" method="get">
+            <textarea class="comentarios" name="comentario" cols="40" rows="10"
+                placeholder="Aca podes enviar una opinion o idea."></textarea>
+            <input class="boton-comentarios" type="submit" value="enviar" />
+        </form>
+    </div>
+    <br>
+    <footer>
+        <i>creado por davidask611@gmail.com</i>
+        <i>copyright 2022</i>
+        <i>whatsapp 1120304050</i>
+    </footer>
+</body>
+
+</html>

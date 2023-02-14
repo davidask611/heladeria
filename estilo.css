@@ -1,0 +1,918 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgba(244, 133, 96, 0.991);
+}
+
+/*menu de navegacion*/
+
+header {
+    display: flex;
+    background-color: rgba(48, 48, 231, 0.854);
+    height: 9vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    color: yellow;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#nombre-empresa {
+    font-size: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 5px;
+    color: yellow;
+    transition: 1s;
+}
+
+nav a:hover {
+    color: rgb(5, 243, 5);
+}
+
+/*aca va la galeria automatica
+ (ojo al modificar algo)*/
+
+.slider {
+    width: 100%;
+    height: 24vh;
+    overflow: hidden;
+    background-colo: rgba(61, 246, 44, 0.97);
+}
+
+
+.slider ul {
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 300%;
+}
+
+.slider div {
+    width: 300%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 30%;
+    object-fit: contain;
+}
+
+/*esto le aplica el movimiento*/
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    /*20%{margin-left: 0;}
+
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+
+      75%{margin-left: -300%;}*/
+    100% {
+        margin-left: -300%;
+    }
+
+
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*helado de 1 kilo*/
+
+.contenedor1kilo {
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 255);
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.contenedor1kilo form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.kilo {
+    color: red;
+}
+
+.cantidad1kilo {
+    margin: 5px;
+    color: black;
+    width: 200px;
+}
+
+.borrar1kilo {
+    margin: 5px;
+    color: rgb(249, 9, 9);
+    width: 200px;
+}
+
+.enviar1kilo {
+    margin: 5px;
+    color: rgb(249, 9, 9);
+    width: 200px;
+}
+
+[alt="helado 1kg"] {
+    border-radius: 30%;
+    width: 50%;
+}
+
+.sabores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+input[type="radio"] {
+    margin: 7px;
+}
+
+.input {
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+    color: crimson;
+    font-weight: bold;
+}
+
+.borrar1kilo:hover {
+    color: rgb(21, 9, 240);
+}
+
+.enviar1kilo:hover {
+    color: rgb(21, 9, 240);
+}
+
+/*helado de 3 litro*/
+
+.contenedor3litros {
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 255);
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.contenedor3litros form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.litros {
+    color: red;
+}
+
+[alt="helado 3lts"] {
+    border-radius: 30%;
+    width: 50%;
+}
+
+.cantidad3litros {
+    margin: 5px;
+    color: black;
+    width: 200px;
+}
+
+.borrar3litros {
+    margin: 5px;
+    color: rgb(249, 9, 9);
+    width: 200px;
+}
+
+.enviar3litros {
+    margin: 5px;
+    color: rgb(249, 9, 9);
+    width: 200px;
+}
+
+.sabores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin: 7px;
+}
+
+.input {
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+    color: crimson;
+    font-weight: bold;
+}
+
+.borrar3litros:hover {
+    color: rgb(21, 9, 240);
+}
+
+.enviar3litros:hover {
+    color: rgb(21, 9, 240);
+}
+
+/*bombon suizo*/
+
+.contenedorbombonsuizo {
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 255);
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.contenedorbombonsuizo form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.bombonsuizo {
+    color: red;
+}
+
+[alt="bombon suizo"] {
+    border-radius: 30%;
+    width: 70%;
+}
+
+.inputsuizo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.inputsuizo input {
+    color: red;
+    text-align: center;
+    margin: 5px;
+}
+
+.cantidadsuizo {
+    width: 200px;
+    margin: auto;
+    color: black !important;
+}
+
+.borrarsuizo {
+    width: 200px;
+    margin: auto;
+}
+
+.enviarsuizo {
+    width: 200px;
+    margin: auto;
+}
+
+.borrarsuizo:hover {
+    color: rgb(21, 9, 240);
+}
+
+.enviarsuizo:hover {
+    color: rgb(21, 9, 240);
+}
+
+/*torta helada*/
+
+.contenedortortahelada {
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 255);
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.contenedortortahelada form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tortahelada {
+    color: red;
+}
+
+[alt="torta helada"] {
+    border-radius: 30%;
+    width: 70%;
+}
+
+.inputtortahelada {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.inputtortahelada input {
+    color: red;
+    text-align: center;
+    margin: 5px;
+}
+
+.cantidadtortahelada {
+    width: 200px;
+    margin: auto;
+    color: black !important;
+}
+
+.borrartortahelada {
+    width: 200px;
+    margin: auto;
+}
+
+.enviartortahelada {
+    width: 200px;
+    margin: auto;
+}
+
+.borrartortahelada:hover {
+    color: rgb(21, 9, 240);
+}
+
+.enviartortahelada:hover {
+    color: rgb(21, 9, 240);
+}
+
+
+/*torta helada 2*/
+
+.contenedortortahelada2 {
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 255);
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.contenedortortahelada2 form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tortahelada2 {
+    color: red;
+}
+
+[alt="torta helada2"] {
+    border-radius: 30%;
+    width: 70%;
+}
+
+.inputtortahelada2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.inputtortahelada2 input {
+    color: red;
+    text-align: center;
+    margin: 5px;
+}
+
+.cantidadtortahelada2 {
+    width: 200px;
+    margin: auto;
+    color: black !important;
+}
+
+.borrartortahelada2 {
+    width: 200px;
+    margin: auto;
+}
+
+.enviartortahelada2 {
+    width: 200px;
+    margin: auto;
+}
+
+.borrartortahelada2:hover {
+    color: rgb(21, 9, 240);
+}
+
+.enviartortahelada2:hover {
+    color: rgb(21, 9, 240);
+}
+
+
+/*torta helada 3*/
+
+.contenedortortahelada3 {
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 255);
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.contenedortortahelada3 form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tortahelada3 {
+    color: red;
+}
+
+[alt="torta helada3"] {
+    border-radius: 30%;
+    width: 70%;
+}
+
+.inputtortahelada3 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.inputtortahelada3 input {
+    color: red;
+    text-align: center;
+    margin: 5px;
+}
+
+.cantidadtortahelada3 {
+    width: 200px;
+    margin: auto;
+    color: black !important;
+}
+
+.borrartortahelada3 {
+    width: 200px;
+    margin: auto;
+}
+
+.enviartortahelada3 {
+    width: 200px;
+    margin: auto;
+}
+
+.borrartortahelada3:hover {
+    color: rgb(21, 9, 240);
+}
+
+.enviartortahelada3:hover {
+    color: rgb(21, 9, 240);
+}
+
+
+/*tentacion*/
+
+.contenedortentacion {
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 255);
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.contenedortentacion form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tentacion {
+    color: red;
+}
+
+.cantidadtentacion {
+    margin: 5px;
+    color: black;
+    width: 200px;
+}
+
+.borrartentacion {
+    margin: 5px;
+    color: rgb(249, 9, 9);
+    width: 200px;
+}
+
+.enviartentacion {
+    margin: 5px;
+    color: rgb(249, 9, 9);
+    width: 200px;
+}
+
+[alt="tentacion"] {
+    border-radius: 30%;
+    width: 50%;
+}
+
+.sabores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin: 7px;
+}
+
+.borrartentacion:hover {
+    color: rgb(21, 9, 240);
+}
+
+.enviartentacion:hover {
+    color: rgb(21, 9, 240);
+}
+
+/*alto combo pizza + helado*/
+.contenedorpizza1kg {
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 255);
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.contenedorpizza1kg form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.pizza1kg {
+    color: red;
+}
+
+.altocombo {
+    color: red;
+}
+
+[alt="promo pizza +1kg helado"] {
+    border-radius: 30%;
+    width: 70%;
+}
+
+.cantidadpizza1kg {
+    width: 200px;
+    margin: auto;
+    color: black !important;
+}
+
+.borrarpizza1kg {
+    width: 200px;
+    margin: auto;
+}
+
+.enviarpizza1kg {
+    width: 200px;
+    margin: auto;
+}
+
+.borrarpizza1kg:hover {
+    color: rgb(21, 9, 240);
+}
+
+.enviarpizza1kg:hover {
+    color: rgb(21, 9, 240);
+}
+
+.sabores input {
+    color: red;
+    text-align: center;
+    margin: 5px;
+}
+
+/*grid ofertas*/
+.ofertas {
+    background-color: white;
+    box-shadow: 5px 5px 1px 5px blue;
+    border-radius: 0% 5% 5% 0%;
+    width: 90%;
+    margin: 5VH auto;
+    border: soli;
+    display: grid;
+    gap: 5PX;
+    grid-template-areas:
+        "ofertas ofertas ofertas"
+        "caja1 caja2 caja3"
+        "caja4 caja5 caja6";
+}
+
+.ofertas i {
+    box-shadow: 5px 4px 3px red;
+    grid-area: ofertas;
+    color: rgb(0, 255, 149);
+    background-color: crimson;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.caja1 {
+    grid-area: caja1;
+    width: 100%;
+    height: 300px;
+}
+
+.imagen1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.caja2 {
+    grid-area: caja2;
+    width: 100%;
+    height: 300px;
+}
+
+.imagen2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.caja3 {
+    grid-area: caja3;
+    width: 100%;
+    height: 300px;
+}
+
+.imagen3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.caja4 {
+    grid-area: caja4;
+    width: 100%;
+    height: 300px;
+}
+
+.imagen4 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.caja5 {
+    grid-area: caja5;
+    height: 300px;
+}
+
+.imagen5 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.caja6 {
+    grid-area: caja6;
+    width: 100%;
+    height: 300px;
+}
+
+.imagen6 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*formulario de oferta*/
+
+.form-ofertas {
+    width: 30%;
+    margin: 10px auto;
+    background-color: rgb(179, 237, 191);
+}
+/*
+.form-ofertas input {
+    margin: 10px;
+    background-color: white;
+}*/
+
+.derecha{
+    float: right;
+}
+/*comentarios*/
+.formulario-registro {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.comentarios {
+    color: brown;
+}
+
+.boton-comentarios {
+    color: blue;
+    border: soli;
+    font-size: 20px;
+}
+
+.boton-comentarios:hover {
+    color: hotpink;
+}
+
+/*pie de pagina*/
+footer {
+    background-color: indigo;
+    color: white;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+footer i {
+    padding: 0 100px;
+}
+
+
+
+/*--FORMULARIO-------------------*/
+.formulario {
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    background: rgba(69, 101, 245, 0.764);
+    border-radius: 5px;
+}
+
+/*--TITULO-----------------------*/
+.titulo {
+    color: #56ef56;
+    margin-bottom: 20px;
+}
+
+/*--CAJAS-DE-DATOS---------------*/
+.cajas {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: none;
+    border-left: 10px solid #d9eae2;
+    transition: all .5s ease;
+}
+
+.cajas:hover,
+.cajas:focus {
+    border-left: 10px solid #f54b5c;
+}
+
+/*--TERMINOS-Y-CONDICIONES-------*/
+.terminouno {
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.terminodos {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.termino2:hover {
+    color: #dbdbdb;
+}
+
+/*--BOTON-DE-REGISTRARSE---------*/
+.boton {
+    width: 100%;
+    padding: 15px;
+    border-radius: 2px;
+    border: none;
+    margin: 20px 0;
+    font-size: 15px;
+    background: #225677;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.boton:hover {
+    background: #cdf041e1;
+}
+
+/*--YA-TENGO-CUENTA--------------*/
+.tengo-cuenta {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tengo-cuenta:hover {
+    color: #dbdbdb;
+}
+
+/*Iniciar sesion*/
+
+/*--FORMULARIO-------------------*/
+
+.formulario-sesion {
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    background: rgba(69, 101, 245, 0.764);
+    border-radius: 5px;
+}
+
+/*--TITULO-----------------------*/
+#iniciar-sesion {
+    color: #56ef56;
+    margin-bottom: 20px;
+}
+
+/*--CAJAS-DE-DATOS---------------*/
+.cajas {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: none;
+    border-left: 10px solid #d9eae2;
+    transition: all .5s ease;
+}
+
+.cajas:hover,
+.cajas:focus {
+    border-left: 10px solid #f54b5c;
+}
+
+
+/*para celulares*/
+
+@media only screen and (min-width: 400px) and (max-width: 750px) {
+    .slider {
+        width: 100%;
+        height: 12vh;
+        overflow: hidden;
+        background-color: rgba(239, 49, 24, 0.97);
+    }
+
+    .slider ul {
+        display: flex;
+        animation: cambio 15s infinite alternate linear;
+        width: 300%;
+    }
+
+    .slider div {
+        width: 300%;
+        list-style: none;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 30%;
+        object-fit: contain;
+    }
+}

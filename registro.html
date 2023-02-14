@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Somos una heladeria familiar, tenemos sabores variados y hacemos envios a domicilio" />
+    <meta name="keywords" content="heladeria,helados,pizza,postres,combos" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Registro</title>
+</head>
+
+<body style="background-color: rgb(189, 194, 211);">
+
+    <!--FORMULARIO---->
+    <form class="formulario">
+
+        <!--TITULO------------------------>
+        <h1 class="titulo">Registrarse</h1>
+
+        <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
+        <input class="cajas" type="text" placeholder="Ingresa tu Nombre" required>
+        <input class="cajas" type="text" placeholder="Ingresa tu Apellido" required>
+        <input class="cajas" type="text" placeholder="Ingresa tu Apodo" required>
+        <input class="cajas" type="email" placeholder="Ingresa tu Email" required>
+        <input class="cajas" type="password" placeholder="Ingresa tu Contraseña" required>
+
+        <!--TERMINOS-Y-CONDICIONES---------------------------------------------------------------------------------->
+        <p class="terminouno"><input type="checkbox">&nbsp; Estoy de acuerdo con <a class="terminodos" href="">Terminos
+                y
+                Condiciones</a></p>
+
+        <!--BOTON-DE-REGISTRARSE-------------------------->
+        <input type="submit" class="boton" value="REGISTRAR">
+
+        <!--YA-TENGO-CUENTA----------------------------------------------------------->
+        <p class="tengo-cuenta"><a href="#iniciar-sesion" class="tengo-cuenta">Ya tengo cuenta</a></p>
+
+    </form>
+
+    <form class="formulario-sesion">
+
+        <!--TITULO------------------------>
+        <h1 id="iniciar-sesion">Iniciar sesion</h1>
+
+        <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
+        <input class="cajas" type="text" placeholder="Ingresa tu Apodo" required>
+        <input class="cajas" type="password" placeholder="Ingresa tu Contraseña" required>
+
+        <!--BOTON-DE-INICIAR-SESION------------------------->
+        <input type="submit" class="boton" value="Iniciar sesion">
+
+    </form>
+
+
+</body>
+
+</html>
